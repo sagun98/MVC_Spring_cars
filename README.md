@@ -1,5 +1,9 @@
 # MVC_Spring_cars  
 
+A Spring MVC WEB APP that maintains cars list with CRUD operations. Uses mysql   
+as the database and Pivotal tx Server3.2
+
+
 Database name: springmvc  
 Table name : cars  
 
