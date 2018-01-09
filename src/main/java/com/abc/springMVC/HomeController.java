@@ -11,6 +11,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+//Added later
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.abc.dao.CarDao;
+import com.abc.model.Car;
 /**
  * Handles requests for the application home page.
  */
@@ -35,5 +43,8 @@ public class HomeController {
 		
 		return "home";
 	}
+	
+	@Autowired
+	CarDao dao; // Will inject DAO from xml bean file
 	
 }
