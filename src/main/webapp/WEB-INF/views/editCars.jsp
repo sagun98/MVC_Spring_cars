@@ -20,6 +20,10 @@
 		<td><form:input path="carId" readonly="true"/> </td>
 	</tr>
 	<tr>
+	<td>Manufacturer: </td>
+		<td><form:input path="manufacturer"/> </td>
+	</tr>
+	<tr>
 		<td>Model: </td>
 		<td><form:input path="model"/> </td>
 	</tr>

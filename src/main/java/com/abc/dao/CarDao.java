@@ -47,7 +47,7 @@ public class CarDao {
 	
 	public void updateCar(Car Car) {
 		try {
-			PreparedStatement preparedStatement = connection.prepareStatement("update cars set manufacturer=?, model=?, city=?, registrationNumber=?");
+			PreparedStatement preparedStatement = connection.prepareStatement("update cars set manufacturer=?, model=?, city=?, registrationNumber=? where carId=?");
 			preparedStatement.setString(1, Car.getManufacturer());
 			preparedStatement.setInt(2, Car.getModel());
 			preparedStatement.setString(3, Car.getCity());
