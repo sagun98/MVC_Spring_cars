@@ -2,13 +2,13 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Cars Home</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+	Welcome to our 1st MVC application
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P> <a href="viewCars">View All Cars </a> </P>
 </body>
 </html>
